@@ -19,18 +19,41 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["Metric1", "Metric2", "Metric3", "Total"],
-        "default_order_by": "Total",
+        "labels": ["AP", "AP50", "AP75", "AP_easy", "AP_hard", "AP_small", "AP_medium", "AP_large"],
+        "default_order_by": "AP",
         "metadata": {
-          "Metric1": {
+          "AP": {
             "sort_ascending": True,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "description": "AP averages the precision at IoU threshold from 0.5 to 0.95 with the step size 0.05.",
           },
-          "Metric2": {
+          "AP50": {
             "sort_ascending": True,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          }
-        }
+            "description": "AP50 is the precision averaged over all instances with IoU threshold as 0.5.",
+          },
+          "AP75": {
+            "sort_ascending": True,
+            "description": "AP75 is the precision averaged over all instances with IoU threshold as 0.75.",
+          },
+          "AP_easy": {
+            "sort_ascending": True,
+            "description": "AP_easy is the AP on <i>easy</i> scene images.",
+          },
+          "AP_hard": {
+            "sort_ascending": True,
+            "description": "AP_easy is the AP on <i>hard</i> scene images.",
+          },
+          "AP_small": {
+            "sort_ascending": True,
+            "description": "AP_small is the AP on <i>small</i> object instances.",
+          },
+          "AP_medium": {
+            "sort_ascending": True,
+            "description": "AP_medium is the AP on <i>medium</i> object instances.",
+          },
+          "AP_large": {
+            "sort_ascending": True,
+            "description": "AP_large is the AP on <i>large</i> object instances.",
+          },
       }
 
 challenge_phases:
@@ -40,7 +63,7 @@ challenge_phases:
     leaderboard_public: False
     is_public: True
     is_submission_public: True
-    start_date: 2024-05-01 00:00:00
+    start_date: 2024-05-05 00:00:00
     end_date: 2024-06-15 23:59:59
     test_annotation_file: annotations/test_annotations_devsplit.json
     codename: dev
@@ -121,6 +144,9 @@ dataset_splits:
     name: Train Split
     codename: train_split
   - id: 2
+    name: Dev Split
+    codename: dev_split
+  - id: 3
     name: Test Split
     codename: test_split
 
@@ -131,15 +157,15 @@ challenge_phase_splits:
     visibility: 1
     leaderboard_decimal_precision: 2
     is_leaderboard_order_descending: True
-  - challenge_phase_id: 2
+  - challenge_phase_id: 1
     leaderboard_id: 1
-    dataset_split_id: 1
+    dataset_split_id: 2
     visibility: 3
     leaderboard_decimal_precision: 2
     is_leaderboard_order_descending: True
   - challenge_phase_id: 2
     leaderboard_id: 1
-    dataset_split_id: 2
+    dataset_split_id: 3
     visibility: 1
     leaderboard_decimal_precision: 2
     is_leaderboard_order_descending: True
