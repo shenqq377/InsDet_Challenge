@@ -19,7 +19,7 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["AP", "AP50", "AP75", "AP_easy", "AP_hard", "AP_small", "AP_medium", "AP_large"],
+        "labels": ["AP", "AP50", "AP75"],
         "default_order_by": "AP",
         "metadata": {
           "AP": {
@@ -33,26 +33,6 @@ leaderboard:
           "AP75": {
             "sort_ascending": True,
             "description": "AP75 is the precision averaged over all instances with IoU threshold as 0.75.",
-          },
-          "AP_easy": {
-            "sort_ascending": True,
-            "description": "AP_easy is the AP on <i>easy</i> scene images.",
-          },
-          "AP_hard": {
-            "sort_ascending": True,
-            "description": "AP_easy is the AP on <i>hard</i> scene images.",
-          },
-          "AP_small": {
-            "sort_ascending": True,
-            "description": "AP_small is the AP on <i>small</i> object instances.",
-          },
-          "AP_medium": {
-            "sort_ascending": True,
-            "description": "AP_medium is the AP on <i>medium</i> object instances.",
-          },
-          "AP_large": {
-            "sort_ascending": True,
-            "description": "AP_large is the AP on <i>large</i> object instances.",
           },
       }
 
