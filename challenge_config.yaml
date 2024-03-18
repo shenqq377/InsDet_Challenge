@@ -19,16 +19,16 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["AP", "AP50", "AP75"],
+        "labels": ["Metric1", "Metric2", "Metric3", "Total"],
         "default_order_by": "Total",
         "metadata": {
-          "AP": {
+          "Metric1": {
             "sort_ascending": True,
-            "description": "AP averages the precision at IoU thresholds from 0.5 to 0.95 with the step size 0.05.",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           },
-          "AP50": {
+          "Metric2": {
             "sort_ascending": True,
-            "description": "AP50 is the precision averaged over all instances with IoU threshold as 0.5.",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           }
         }
       }
