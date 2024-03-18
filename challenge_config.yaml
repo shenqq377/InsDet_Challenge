@@ -142,8 +142,8 @@ challenge_phases:
 
 dataset_splits:
   - id: 1
-    name: Train Split
-    codename: train_split
+    name: Dev Split
+    codename: dev_split
   - id: 2
     name: Test Split
     codename: test_split
