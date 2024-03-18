@@ -142,9 +142,12 @@ challenge_phases:
 
 dataset_splits:
   - id: 1
+    name: Train Split
+    codename: train_split
+  - id: 2
     name: Dev Split
     codename: dev_split
-  - id: 2
+  - id: 3
     name: Test Split
     codename: test_split
 
@@ -152,6 +155,12 @@ challenge_phase_splits:
   - challenge_phase_id: 1
     leaderboard_id: 1
     dataset_split_id: 1
+    visibility: 1
+    leaderboard_decimal_precision: 2
+    is_leaderboard_order_descending: True
+  - challenge_phase_id: 1
+    leaderboard_id: 1
+    dataset_split_id: 2
     visibility: 1
     leaderboard_decimal_precision: 2
     is_leaderboard_order_descending: True
