@@ -56,7 +56,8 @@ leaderboard:
           },
           "AR": {
             "sort_ascending": True,
-            "description": "AR averages the proposal recall at IoU threshold from 0.5 to 1.0 with the step size 0.05, regradless of the classification accuracy.
+            "description": "AR averages the proposal recall at IoU threshold from 0.5 to 1.0 with the step size 0.05, regradless of the classification accuracy.",
+          },
         }
       }
 
