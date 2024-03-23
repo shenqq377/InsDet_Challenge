@@ -12,7 +12,7 @@ evaluation_script: evaluation_script.zip
 remote_evaluation: False
 is_docker_based: False
 start_date: 2024-04-01 00:00:00
-end_date: 2024-06-15 23:59:59
+end_date: 2024-06-01 23:59:59
 published: True
 
 leaderboard:
@@ -69,7 +69,7 @@ challenge_phases:
     is_public: True
     is_submission_public: True
     start_date: 2024-04-01 00:00:00
-    end_date: 2024-06-15 23:59:59
+    end_date: 2024-06-01 23:59:59
     test_annotation_file: annotations/test_annotations_devsplit.json
     codename: dev
     max_submissions_per_day: 5
@@ -111,7 +111,7 @@ challenge_phases:
     is_public: True
     is_submission_public: True
     start_date: 2024-05-15 00:00:00
-    end_date: 2024-06-15 23:59:59
+    end_date: 2024-06-01 23:59:59
     test_annotation_file: annotations/test_annotations_testsplit.json
     codename: test
     max_submissions_per_day: 3
