@@ -10,12 +10,13 @@ def get_curr_working_dir():
 
 def run():
     current_working_directory = get_curr_working_dir()
+    print("current_working_directory", current_working_directory)
     sys.path.append("{}".format(current_working_directory))
     sys.path.append("{}/challenge_data/challenge_1".format(current_working_directory))
 
     challenge_id = 1
-    challenge_phase = "test"  # Add the challenge phase codename to be tested
-    annotation_file_path = "{}/annotations/test_annotations_testsplit.json".format(
+    challenge_phase = "dev"  # Add the challenge phase codename to be tested
+    annotation_file_path = "{}/annotations/test_annotations_devsplit.json".format(
         current_working_directory
     )  # Add the test annotation file path
     user_submission_file_path = "{}/submission.json".format(
